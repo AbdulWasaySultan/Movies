@@ -1,0 +1,70 @@
+/* ====== Favorites Page Layout ====== */
+
+.favorites-page {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  min-height: 80vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.favorites-page p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* ====== Favorite Heart Button (for movie cards) ====== */
+
+.favorite-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.favorite-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.favorite-button.active {
+  color: #ff4757;
+}
+
+/* ====== Responsive (Optional) ====== */
+
+@media (max-width: 768px) {
+  .favorites-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .favorites-page p {
+    font-size: 0.9rem;
+  }
+
+  .favorite-button {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+}
